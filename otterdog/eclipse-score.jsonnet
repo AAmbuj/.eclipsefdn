@@ -98,6 +98,7 @@ local qnx_enabled_repos = [
     "communication",
     "ferrocene_toolchain_builder",
     "inc_someip_gateway",
+    "inc_time",
     "itf",
     "kyron",
     "lifecycle",
@@ -406,7 +407,7 @@ orgs.newOrg('automotive.score', 'eclipse-score') {
       code_scanning_default_setup_enabled: true,
       code_scanning_default_languages+: [
         "actions",
-        "python",
+        "python"
       ],
     },
 
@@ -834,7 +835,7 @@ orgs.newOrg('automotive.score', 'eclipse-score') {
 
       # Deviations from standard dependable element repository settings:
       template_repository: null,
-      gh_pages_build_type: "disabled",
+      gh_pages_build_type: "workflow",
       has_projects: true,
       homepage: null,
       dependabot_security_updates_enabled: false,
